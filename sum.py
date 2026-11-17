@@ -19,3 +19,9 @@ print("The result of casting is:", ans1)
 #conversion
 ans2 = 5 + 15.5
 print("The result of conversion is:", ans2)
+
+#sum of 2 numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+sum = num1 + num2
+print("The sum of", num1, "and", num2, "is:", sum)
