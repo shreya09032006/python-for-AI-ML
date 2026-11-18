@@ -30,3 +30,11 @@ while i<10:
 string = "Hello"
 for char in string:
     print(char)    
+
+# print vowel count
+word =  "artificial"  
+vowel_count = 0
+for char in word:
+    if char in "aeiouAEIOU":
+        vowel_count += 1
+print("Number of vowels in the word:", vowel_count) 
