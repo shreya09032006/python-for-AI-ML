@@ -63,4 +63,22 @@ class adminstaff(employee):
 t1 = teacher("maths")
 t1.change_time("7pm")
 
-print(t1.subject , t1.end_time)
+print(t1.subject ,t1.start_time , t1.end_time)
+
+
+#multilevel of inheritance 
+
+class Employee:
+    start_time = "10am"
+    end_time = "6pm"
+class Adminstaff(Employee):
+    def __init__(self,role):
+        self.role = role
+class accountant(Adminstaff):
+    def __init__(self , salary , role):
+        super().__init__(role)
+        self.salary = salary
+
+acc1 = accountant(25_000 , "ca")
+
+print(acc1.role , acc1.salary , acc1.start_time , acc1.end_time)
