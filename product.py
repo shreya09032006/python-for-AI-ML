@@ -41,3 +41,26 @@ acc1.set_balance(200_0000)
 print(acc1.name , acc1.get_balance())
 #print(acc1.bankaccount__balance) -> data mangling 
 #data mangling -> Data mangling (also called name mangling) in Python is a process in which Python automatically changes the name of a class attribute that starts with two underscores (__) by adding the class name as a prefix
+
+
+#inheritance 
+
+class employee:
+    start_time = "10am"
+    end_time = "6pm"
+    def change_time(self, new_end_time):
+           self.end_time = new_end_time
+
+class teacher(employee):
+    def __init__(self,subject):
+        self.subject = subject
+
+class adminstaff(employee):
+    def __init__(self,role):
+        self.role = role
+
+
+t1 = teacher("maths")
+t1.change_time("7pm")
+
+print(t1.subject , t1.end_time)
