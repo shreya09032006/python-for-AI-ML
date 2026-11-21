@@ -53,3 +53,6 @@ with open("sample.txt" , "r") as f:
             
 
         print(data)
+
+
+
