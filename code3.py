@@ -11,9 +11,17 @@
 '''with open("log.txt" , "a") as f:
     f.write(" \n Program run Successfully ")'''
 
+
+'''with open("log.txt" , "r") as f:
+    data = f.read()
+    print(data)'''
+
 #3
 
-with open("log.txt" , "r") as f:
-    data = f.read()
-    print(data)
+nums = [5,10 , 15, 20 ,25]
+newNums = [i for i in nums if i > 15]
+print(newNums)
+
+
+
 
