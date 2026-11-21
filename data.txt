@@ -1,0 +1,7 @@
+Python is a popular programming language.
+It is easy to learn and understand.
+File handling allows us to read and write files.
+Python supports different file modes like r, w, a, r+, w+ and a+.
+We can use read(), readline() and readlines() to read data.
+We can use write() to add content to a file.
+Practice makes programming easier.
